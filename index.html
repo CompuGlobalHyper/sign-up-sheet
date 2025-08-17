@@ -19,21 +19,23 @@
         <div class="main">
             <div class="header">
                 <h1>Join the world's largest sparkling water subscription service/dating app combination!</h1>
-                <h2>Find your perfect bubble</h2>
+                <h2>Find your <em>perfect</em> bubble</h2>
             </div>
             <div class="form-container">
                 <h3>Sign me up!</h3>
                 <form action="fake.com" method="get">
                     <section>
                         <p><label for="firstname">FIRST NAME<input type="text" id="firstname" name="user-firstname" required></label></p>
-                        <p><label for="lastname">LAST NAME<input type="text" id="lastname" name="user-lastname"></label></p>
+                        <p><label for="lastname">LAST NAME<input type="text" id="lastname" name="user-lastname" required></label></p>
                     </section>
                     <section>
                         <p><label for="email">EMAIL<input type="email" id="email" name="user-email" required></label></p>
-                        <p><label for="phone">PHONE NUMBER<input type="tel" id="phone" name="user-telephone" required></label></p>
+                        <p><label for="phone">PHONE NUMBER<input type="tel" id="phone" name="user-telephone" required placeholder="(555) 555-5555"></label></p>
                     </section>
                     <section>
-                        <p><label for="password">PASSWORD<input type="password" id="password" name="user-password" required></label></p>
+                        <p><label for="password">PASSWORD<input type="password" id="password" name="user-password" required 
+                            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}"
+                             title="Must be at least 8 characters, with 1 uppercase, 1 lowercase, 1 number, and 1 special character"></label></p>
                         <p><label for="password2">CONFIRM PASSWORD<input type="password" id="password2" name="user-password" required></label></p>
                     </section>
                 </form>
